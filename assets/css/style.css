@@ -8,25 +8,34 @@
     margin: 20px auto;
     width: 800px;
     display: grid;
-    gap: 10px;
-    grid-template-columns: 400px 400px; /* Hvor mange columns skal der være? Hen af */
+    gap: 20px;
+    grid-template-columns: 1fr 1fr; /* Hvor mange columns skal der være? Hen af */
     grid-template-rows: 400px 400px 400px; /* Hvor mange rows skal der være? Ned af */
+}
+
+article {
+    text-align: center;
+    padding: 20px;
 }
 
 .box1 {
     background-color: red;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
+    /*grid-column-start: 1;
+    grid-column-end: 3;*/
+    grid-column: 1 / 3;
+    /*grid-row-start: 1;
+    grid-row-end: 2;*/
+    grid-row: 1 / 2;
 }
 
 .box2 {
     background-color: yellow;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 4;
+    /*grid-column-start: 2;
+    grid-column-end: 3;*/
+    grid-column: 2 / 3;
+    /*grid-row-start: 2;
+    grid-row-end: 4;*/
+    grid-row: 2 / 4;
 }
 
 .box3 {
